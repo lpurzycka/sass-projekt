@@ -1,0 +1,99 @@
+//$baseColor: blue;
+//$fontSize: 10px;
+//
+//body {
+//    background-color: $baseColor;
+//}
+//
+//p{
+//    font-size: $fontSize;
+//    padding: 20px;
+//}
+//
+//nav {
+//    background-color: lime;
+//    ul {
+//        padding: 20px;
+//        li{
+//        display: inline-block;
+//        
+//        a {
+//            color: black;
+//            transition: all .3s;
+//            
+//            &:hover {
+//                color: coral;
+//                }
+//        }
+//    }
+//}
+//}
+
+
+
+@import 'zmienne';
+body {
+    color:$base-color;
+    font-family:$base-font-family;
+    max-width: $max-width;
+    margin:0 auto;
+    font-size:$base-font-size;
+    background-color: $bg-color;
+}
+@mixin link-style($color,$font-size){
+    color:$color;
+    font-size:$font-size;
+}
+nav {
+    ul {
+        padding:0;
+        margin:0;
+        list-style:none;
+       
+        li{
+            display:inline-block;
+       
+        }
+        a{
+            @include link-style(red,25px);
+        }
+    }
+}
+.linki {
+    p{
+        a{
+            @include link-style(yellow,35px);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    
